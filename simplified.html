@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0px;
+            background: rgb(234, 233, 233);
+            font-family: 'Varela Round', sans-serif;;
+        }
+       .soft{
+         display: flex;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: baseline;
+         background: white;
+         position: sticky;
+         top: 0px;
+       }
+       a{
+        color:blue;
+        text-decoration: none;
+        margin: 0px 10px; 
+       }
+       a:hover{
+        color: lightseagreen;
+       }
+
+       .fuk{
+        background-image: url(../gsquare/lop.jpg);
+        height: 650px;
+        margin-top: -32px;
+        background-size: cover;
+       }
+       .chalk{
+        background-color: rgba(0, 64, 255, 0.516);
+        height: 450px;
+        padding-top: 200px;
+       }
+       .jk{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+       }
+       i{
+        color: white;
+        font-size: 20px;
+       }
+       ul{
+        list-style-type: none;
+       }
+       button{
+        background: rgb(1, 83, 177);
+        border-radius: 4px;
+        color: white;
+        width: 100px;
+        height: 40px;
+        border: none;
+        text-align: center;
+       }
+       .xe{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+       }
+       .we{
+        background: rgb(248, 248, 248);
+        box-shadow: 0px 0px 5px rgb(122, 122, 122);
+        width: 250px;
+        height: 550px;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        padding: 10px;
+        line-height: 30px;
+       }
+       .bola{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-self: last baseline;
+        background: rgb(3, 74, 155);
+        color: white;
+       }
+       .them{
+        background: rgb(248, 248, 248);
+        box-shadow: 0px 0px 5px rgb(122, 122, 122);
+        width: 250px;
+        height: 550px;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        padding: 10px;
+       }
+       .our{
+        background: rgb(248, 248, 248);
+        box-shadow: 0px 0px 5px rgb(122, 122, 122);
+        width: 250px;
+        height: 550px;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        padding: 10px;
+        line-height: 30px;
+       }
+       .self{
+        background: rgb(248, 248, 248);
+        box-shadow: 0px 0px 5px rgb(122, 122, 122);
+        width: 250px;
+        height: 550px;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        padding: 10px;
+       }
+       .chart{
+        background: linear-gradient(90deg, rgb(1, 70, 172) 10%, rgb(219, 13, 89) 70%);
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+        margin: 10px auto;
+        box-shadow: 0px 0px 10px rgb(111, 111, 111);
+       }
+       .mini{
+        background: linear-gradient(90deg, rgb(1, 70, 172) 10%, rgb(219, 13, 89) 70%);
+        border-radius: 100px;
+        width: 120px;
+        height: 120px;
+        margin: 10px auto;
+        box-shadow: 0px 0px 10px rgb(111, 111, 111);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       }
+       .fa-chart-pie{
+        text-align: center;
+        font-size: 70px;
+        margin: 25px 20px;
+       }
+       .bi-graph-up-arrow{
+        text-align: center;
+        font-size: 70px;
+       }
+       .fa-money-check-dollar{
+        text-align: center;
+        font-size: 70px;
+        margin: 25px 20px;
+       }
+       .fa-chart-area{
+        text-align: center;
+        font-size: 70px;
+        margin: 25px 10px 10px 25px;
+       }
+    .plan{
+        background: linear-gradient(90deg, rgb(1, 70, 172) 10%, rgb(219, 13, 89) 70%);
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+        margin: 10px auto;
+        box-shadow: 0px 0px 10px rgb(111, 111, 111);
+       }
+    .card{
+        background: linear-gradient(90deg, rgb(1, 70, 172) 10%, rgb(219, 13, 89) 70%);
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+        margin: 10px auto;
+        box-shadow: 0px 0px 10px rgb(111, 111, 111);
+    }
+    .post{
+        background: linear-gradient(90deg, rgb(1, 70, 172) 10%, rgb(219, 13, 89) 70%);
+        border-radius: 100%;
+        width: 120px;
+        height: 120px;
+        margin: 10px auto;
+        box-shadow: 0px 0px 10px rgb(111, 111, 111);
+    }
+    .ewe{
+        margin-left: 80px;
+    }
+    
+    .fa-credit-card{
+        font-size: 70px;
+        margin: 25px 10px 10px 25px;   
+    }
+    .credit{
+        display: flex;
+        flex-direction: row;
+        background: white;
+        box-shadow: 0px 0px 3px grey;
+        margin-left: 30px;
+        width:75rem;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .dog{
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        justify-content: space-between; 
+        width: 500px;
+    }
+    .fa-circle-check{
+        color: rgb(13, 72, 202);
+        margin-right: 6px;
+        font-size: 13px;
+    }
+    .tired{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    li{
+        line-height: 25px;
+    }
+    .up{
+        color:rgb(2, 46, 155);
+        font-size: 35px;
+    }
+    .ope{
+        padding-right: 30px;
+        background: white;
+        color:rgb(0, 85, 255);
+        display: none;
+        text-align: center;
+    }
+    .drop:hover ul{
+        display: block;
+
+    }
+    .it{
+        margin: 0px 7px;
+        font-size: 30px;
+    }
+    @media screen and (max-width:768px) {
+        .yk{
+            display: none;
+        }
+        .lop{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin-left: 100px;
+        }
+        li{
+            line-height: 22px;
+        }
+        .me{
+            display:block;
+            justify-content: center;
+        }
+        .bola{
+            display: flex;
+            flex-direction: column-reverse;
+            padding-left: 20px;
+        }
+        .qw{
+            display: none;
+        }
+        .xe{
+            display: block;
+        }
+        .maize{
+            display: none;
+        }
+        .credit{
+        display: flex;
+        flex-direction: column;    
+        background: rgb(248, 248, 248);
+        box-shadow: 0px 0px 5px rgb(122, 122, 122);
+        width: 250px;
+        height: 550px;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        margin-left: -0.002px
+        }
+        .dog{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 150px;
+        }
+        .body{
+            margin:20px
+        }
+        .tired{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .nana{
+            display: none;
+        }
+        .maize{
+            display: block;
+        }
+        .card{
+            margin-top: -20px;
+        }
+        .ewe{
+            margin-top: -40px;
+        }
+        .shade{
+            margin-top: -20px;
+            margin-left: -40px;
+        }
+    }
+    @media  screen and (min-width:768px) {
+        .up{
+            display: none;
+        }
+        .nana{
+            display: block;
+        }
+        .maize{
+            display: none;
+        }
+        
+    }
+    .err{
+        border-radius: 100px;
+        background-color: rgb(248, 246, 246);
+        box-shadow: 0px 0px 5px grey;
+        position: fixed;
+        margin-left: 74rem;
+        margin-top: 25rem;
+        height: 50px;
+        width: 50px;
+    }
+    .bi-person-circle{
+        color: blue;
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 13px;
+    }
+    .toy{
+        border: none;
+        background: white; 
+        color:rgb(0, 119, 255); 
+        width:150px; 
+        height:60px; 
+        font-size: 20px; 
+        box-shadow: 0px 0px 5px grey;
+    }
+    .nif{
+        margin-top: -20px;
+    }
+    </style>
+</head>
+<body>
+    <div class="soft">
+        <img src="../gsquare/credit.png" alt="" height="70px">
+        <div class="yk">
+            <a href="#">Home</a>
+            <a href="#">Credit Compare</a>
+            <a href="#">Mini Business Plan</a>
+            <a href="#">Standard Business Plan</a>
+            <a href="#">Management Finance</a>
+            <a href="#">In-the-news</a>
+            <a href="#">Get Support</a>
+            <a href="#">Login</a>
+        </div> 
+        <div class="drop">  
+            <i class=" fa fa-bars up"></i>  
+            <ul class="ope">
+                <li> <a href="#">Home</a></li>
+                <li><a href="#">Credit Compare</a></li>
+                <li><a href="#">Mini Business Plan</a></li>
+                <li><a href="#">Standard Business Plan</a></li>
+                <li><a href="#">Management Finance</a></li>
+                <li><a href="#">In-the-news</a></li>
+                <li><a href="#">Get Support</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div class="err">
+        <i class="bi bi-person-circle"></i>
+    </div>
+    <div class="fuk">
+        <div class="chalk">
+            <div class="chat">
+                    <p><h1 style="color: white; font-size: 50px; text-align: center; padding-top: 0px;">GROW YOUR BUSINESS</h1></p>
+                <p style="color:white; text-align: center; margin-top: -10px;">information, assessment, planning and monitoring services that improve access to<br>
+                    credit and help to grow your business sustainably.
+                </p>
+                <div style="text-align: center;">
+                    <button class="toy">Get Started</button>
+                </div>    
+                <p style="color:white; text-align: center;">Get started with FREE tools, and upgrade as you grow.</p>
+                <div class="jk" style="text-align: center; color: white;">
+                    <div>
+                        <i class="fa-sharp fa-solid fa-circle-play" style="font-size: 50px; text-align: center;"></i>
+                        <p>watch video on Developing a Business plan</p>
+                    </div>
+                    <div>
+                        <i class="bi bi-file-text" style="font-size: 50px"></i>
+                        <p>Preview sample mini Business Plan</p>
+                    </div>
+                    <div>
+                        <i class=" fa fa-bars" style="font-size: 50px; text-align: center;"></i>
+                        <p>See list of eligible sectors for the mini Business Plan</p>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <div class="me">
+        <p style="text-align: center; font-size: 30px;"><b>ALL IN ONE PLATFORM FOR BUSINESS EXPANSION</b></p>
+        <p style="text-align: center; margin-bottom: 50px;">Simplified Credit offers dynamic tools for viability assesment, business plannning, post-Credit
+            monitoring and <br>financial management, with a free extensive credit compare service at its core.
+        </p>
+        <div class="lop">
+            <div class="credit">
+                <div class="tired">
+                    <div class="card">
+                        <i class="fa-regular fa-credit-card"></i>
+                    </div>   
+                    <button style="margin-left: 10px;" class="nana">Learns More</button> 
+                </div>    
+                <div class="ewe">   
+                    <p style="font-size: 30px;"><b>Credit Compare</b></p>
+                    <div class="shade">
+                        <p>Find and compare credit options to enable you select best-fit loans.</p><hr>
+                        <p style="text-align: center;"><b>FEATURES</b></p>
+                        <ul class="dog">
+                        <li><i class="fa-solid fa-circle-check"></i> Free service</li>
+                        <li><i class="fa-solid fa-circle-check"></i>One-stop credit databank</li>
+                        <li><i class="fa-solid fa-circle-check"></i> comprehensive credit terms</li>
+                        <li><i class="fa-solid fa-circle-check"></i> loans requirement</li>
+                    </ul> 
+                    <button style="margin-left: 10px;" class="maize">Learns More</button>
+                    </div>    
+                </div>
+            </div>
+            <div class="xe">
+                <div class="we">
+                    <div class="mini">
+                        <i class="bi bi-graph-up-arrow"></i>
+                    </div>
+                    <p style="font-size: 30px; text-align: center;"><b>Mini Business Plan</b></p>
+                    <div class="nif">
+                        <p style="text-align: left;">Evaluate the feasiblity and sustainably of micro business.</p><hr>
+                    <p style="text-align: center;"><b>FEATURES</b></p>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> cost assessment</li>
+                        <li><i class="fa-solid fa-circle-check"></i> feasiblity evaluation</li>
+                        <li><i class="fa-solid fa-circle-check"></i> analysis</li>
+                        <li><i class="fa-solid fa-circle-check"></i> market and financial projection</li>
+                    </ul>    
+                    <button style="margin-left: 75px;">Learns More</button>
+                    </div>
+                </div>
+                <div class="them">
+                    <div class="plan">
+                        <i class="fa-sharp fa-solid fa-chart-area"></i>
+                    </div>
+                    <p style="font-size: 30px; text-align: center;"><b>Standard Business Plan</b></p>
+                    <p style="text-align: left;">Define key parameters for the success of your business.</p><hr>
+                    <p style="text-align: center;"><b>FEATURES</b></p>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> business plan</li>
+                        <li><i class="fa-solid fa-circle-check"></i> formatting</li>
+                        <li><i class="fa-solid fa-circle-check"></i> and industry analysis</li>
+                        <li><i class="fa-solid fa-circle-check"></i> market and financial projections</li>
+                    </ul>    
+                    <button style="margin-left: 70px;">Learns More</button>
+                </div>
+                <div class="our">
+                    <div class="post">
+                        <i class="fa-solid fa-money-check-dollar"></i>
+                    </div>
+                    <p style="font-size: 30px; text-align: center;"><b>Post-Credit Moitoring</b></p>
+                    <p style="text-align: center;">Track and evaluate your business and credit utilization.</p><hr>
+                    <p style="text-align: center;"><b>FEATURES</b></p>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> scoring</li>
+                        <li><i class="fa-solid fa-circle-check"></i> reporting</li>
+                        <li><i class="fa-solid fa-circle-check"></i> assessment</li>
+                        <li><i class="fa-solid fa-circle-check"></i>Recommendation</li>
+                    </ul>    
+                    <button style="margin-left:75px;">Contact Us</button>
+                </div>
+                <div class="self">
+                    <div class="chart">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <p style="font-size: 30px; text-align: center;"><b>Management Finace</b></p>
+                    <p style="text-align:left ;">Learn simple thing can put your business ahead of others.</p><hr>
+                    <p style="text-align: center;"><b>FEATURES</b></p>
+                    <ul>
+                        <li><i class="fa-solid fa-circle-check"></i> Convenient management support</li>
+                        <li><i class="fa-solid fa-circle-check"></i> literacy</li>
+                        <li><i class="fa-solid fa-circle-check"></i> management</li>
+                        <li><i class="fa-solid fa-circle-check"></i> business templates</li>
+                    </ul>    
+                    <button style="margin-left: 70px;">Learns More</button>
+                </div>
+            </div>    
+        </div>    
+    </div>
+    <div class="bola">
+        <div>
+            <p><h2 class="qw">LEGAL RIGHT</h2></p>
+            <p>&copy;Simplified Credit. <br>All Right Reserved Developed by<br> <b>G-Square Communication</b>&reg;</p>
+        </div>    
+        <div>    
+            <p><h2>CONNECT WITH US</h2></p>
+            <i  class="fa-sharp fa-solid fa-square-phone"></i>+234 706 50000 835</i> <i class="fa-sharp fa-solid fa-square-phone"></i>+234 706 50000 835</i><br>
+            <i class="fa-sharp fa-solid fa-envelope"></i>Support@simplifiedcredit.net</i>
+        </div>
+        <div>    
+            <p><h2>SOCIAL CONNECT</h2></p>
+            <div style="font-size: 25px; margin: 0px 10px;">
+                <i class="bi bi-twitter it"></i>
+                <i class="bi bi-telegram it"></i>
+                <i class="bi  bi-facebook it"></i>
+                <i class="bi bi-tiktok it"></i>
+                <i class="bi bi-instagram it"></i>
+            </div>    
+        </div>    
+        
+    </div>
+</body>
+</html>

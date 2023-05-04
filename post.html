@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        th{
+            background: blue;
+            color: white;
+            animation: king 2s ease 0s infinite alternate;
+        }
+        td{
+            color: blue;
+            background: white;
+            animation: king 2s ease 0s infinite alternate;
+        }
+        table{
+            border-radius: 4px;
+            box-shadow: 10px 10px  10px rgb(157, 0, 0);
+            background: grey;
+            animation: soft 2s ease 1s infinite alternate;
+        }
+        td:hover{
+            background: gold;
+            color: white;
+        }
+        th{
+            color:white;
+            background: gold;
+        }
+        @keyframes soft {
+            0%{
+                background: green;
+                color: white;
+                box-shadow: 0px 0px 5px blue;
+                border:10px groove red ;
+                margin-left: 0px;
+            }
+            10%{
+                background: gold;
+                color: white;
+                box-shadow: 0px 0px 5px red;
+                border: 10px groove green;
+                margin-left: 100%;
+            }
+            20%{
+                background: purple;
+                color:rgb(157, 0, 0);
+                box-shadow: 0px 0px 5px gold;
+                border: 10px groove blue;
+                margin-top: 50px;
+                margin-left: 100%;
+            }
+            30%{
+                background: yellow;
+                box-shadow: rgb(43, 255, 0);
+                border: 10px groove purple;
+                margin-top: 50px;
+                margin-left: 0px;
+            }
+            40%{
+                background: rgb(0, 88, 117);
+                box-shadow: 10px 10px 2px gold;
+                margin-top: 0px ;
+                margin-left: 0px;
+            }
+        }
+        @keyframes king {
+            from{
+                background: gold;
+                color: white;
+
+            }
+            to{
+                background: blue;
+                color: white;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="7" border="1">
+        <tr>
+            <th colspan="4">Time Table</th>
+            <!--<td>Physics</td>
+            <td>English</td>
+            <td>Mathematics</td>-->
+        </tr>
+        <tr>
+            <td>Computer</td>
+            <td>Data Processing</td>
+            <td>Civic Education</td>
+            <td>Social Stodies</td>
+        </tr>
+        <tr>
+            <td>Accounting</td>
+            <td>Lit-In-English</td>
+            <td>Commerce</td>
+            <td>Economics</td>
+        </tr>
+        <tr>
+            <td>Chemistry</td>
+            <td>Physics</td>
+            <td>English</td>
+            <td>Mathematics</td>
+        </tr>
+        <tr>
+            <td>Computer</td>
+            <td>Data Processing</td>
+            <td>Civic Education</td>
+            <td>Social Stodies</td>
+        </tr>
+        <tr>
+            <td>Accounting</td>
+            <td>Lit-In-English</td>
+            <td>Commerce</td>
+            <td>Economics</td>
+        </tr>        <tr>
+            <td>Chemistry</td>
+            <td>Physics</td>
+            <td>English</td>
+            <td>Mathematics</td>
+        </tr>
+        <tr>
+            <td>Computer</td>
+            <td>Data Processing</td>
+            <td>Civic Education</td>
+            <td>Social Stodies</td>
+        </tr>
+        <tr>
+            <td>Accounting</td>
+            <td>Lit-In-English</td>
+            <td>Commerce</td>
+            <td>Economics</td>
+        </tr>
+    </table>
+</body>
+</html>
